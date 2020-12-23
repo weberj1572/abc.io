@@ -14,12 +14,18 @@
         width: 854,
         height: 480,
         channel: "FoxholeLive",
-	autoplay: "true",
+        autoplay: "true",
       };
       var player = new Twitch.Player("nplive-stream", options);
       player.setVolume(0.5);
 </script>
-
+<iframe frameborder="0"
+        scrolling="no"
+        id="chat_embed"
+        src="https://www.twitch.tv/embed/hebo/chat?parent=foxholelive.org"
+        height="500"
+        width="350">
+</iframe>
 
 </body>
 </html>
