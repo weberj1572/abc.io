@@ -14,32 +14,17 @@
     justify-content: center;
 
     }
-    .main {
-      display:flex;
+    body {
+      display:block;
       align-items: center;
-      justify-content: center;}
-    @media only screen and (max-width:800px) {
-    /* For tablets: */
-    .main {
-     width: 80%;
-      padding: 0;
-    }
-    .right {
-      width: 100%;
-    }
-  }
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
+      justify-content: center;
+   
     }
   </style>
 </head>
 <body>
 <!-- embed twitch video -->
-<div class="main"> 
+<div>
 <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
       <div id="nplive-stream" style="text-align: center;"></div>
       <script type="text/javascript">
