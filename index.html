@@ -18,20 +18,20 @@
       display:flex;
       align-items: center;
       justify-content: center;
-      max-width:100%;
+      max-width: 100%;      
     }
   </style>
 </head>
 <body>
 <!-- embed twitch video -->
-<div>
+<div style=max-width:100%;height:auto;>
 <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
       <div id="nplive-stream" style="text-align: center;"></div>
       <script type="text/javascript">
       var options = {
         layout: "video-with-chat",
-        width: "100%",
-        height: "100%",
+        width: 854,
+        height: 480,
         channel: "FoxholeLive",
         autoplay: "true",
         parent: ["foxholelive.org", "officialj.com"]
@@ -45,8 +45,7 @@
         src="https://www.twitch.tv/embed/FoxholeLive/chat?parent=officialj.com"
         height="500"
         width="100%">
-</iframe>
-</div>
+</iframe></div>
 
 </body>
 </html>
