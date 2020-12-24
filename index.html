@@ -54,13 +54,12 @@
     -->
     <script type="text/javascript">
       var embed = new Twitch.Embed("twitch-embed", {
-        layout: "video",
+        layout: "video-with-chat",
         width: 960, //1280
         height: 540, //720
         channel: "FoxholeLive",
         autoplay: "true",
         allowfullscreen: "true",
-        chat:embed,
         // only needed if your site is also embedded on embed.example.com and othersite.example.com 
         parent: ["foxholelive.org", "officialj.com"]
         
@@ -70,6 +69,8 @@
         var player = embed.getPlayer();
         player.play();
       });
+
+      //shrink chatbox on mobile?
     </script>
 </div>
 
