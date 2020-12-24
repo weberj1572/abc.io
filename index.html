@@ -54,14 +54,16 @@
     -->
     <script type="text/javascript">
       var embed = new Twitch.Embed("twitch-embed", {
-        layout: "video-with-chat",
-        width: 1060, //1280
-        height: 640, //720
+        layout: "video",
+        width: 960, //1280
+        height: 540, //720
         channel: "FoxholeLive",
         autoplay: "true",
         allowfullscreen: "true",
+        chat:embed,
         // only needed if your site is also embedded on embed.example.com and othersite.example.com 
         parent: ["foxholelive.org", "officialj.com"]
+        
       });
 
       embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
